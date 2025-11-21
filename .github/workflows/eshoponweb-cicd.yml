@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
 # Environment variables used across jobs
 env:
-  RESOURCE-GROUP: rg-eshoponweb-wc # Replace NAME with your unique identifier
-  LOCATION: eastus # Choose your Azure region
+  RESOURCE-GROUP: 'rg-eshoponweb-wc' # Replace NAME with your unique identifier
+  LOCATION: 'eastus2' # Choose your Azure region
   TEMPLATE-FILE: '${{ github.workspace }}/infra/webapp.bicep'
-  SUBSCRIPTION-ID: f8f54a64-33d9-442e-a248-b64420ccefea # Replace with your subscription ID
-  WEBAPP-NAME: eshoponweb-wc # Replace NAME with unique identifier (lowercase, no spaces)
+  SUBSCRIPTION-ID: 'acdc8ddd-f765-40e0-a67d-3d92a9da71e8' # Replace with your subscription ID
+  WEBAPP-NAME: eshoponweb-wc1 # Replace NAME with unique identifier (lowercase, no spaces)
 jobs:
   # Build and test job
   buildandtest:
